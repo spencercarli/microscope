@@ -16,7 +16,12 @@ Meteor.methods({
 			author: user.username,
 			submitted: new Date().getTime()
 		});
+
+		//Increment count of comments for post_item
 		Posts.update(comment.postId, {$inc: {commentsCount: 1}});
+
+		//Create a notification that there is a new comment
+		createCommentNotification(comment);
 
 		return Comments.insert(comment); 
 	}
