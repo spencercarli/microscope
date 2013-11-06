@@ -2,14 +2,15 @@
   "meteor": {
     "git": "https://github.com/meteor/meteor.git",
     "branch": "master",
-    "commit": "7e91b37ccd65e46d4b26b8082fb5a619ae81a39b"
+    "commit": "86a52e61428f5dcd9e75eb1de0e303caf0c26a22"
   },
   "dependencies": {
     "basePackages": {
       "router": {},
       "accounts-ui-bootstrap-dropdown": {},
       "spin": {},
-      "errors": {}
+      "errors": {},
+      "paginated-subscription": {}
     },
     "packages": {
       "router": {
@@ -31,6 +32,11 @@
         "git": "https://github.com/tmeasday/meteor-errors.git",
         "tag": "v0.2.0",
         "commit": "b7cc525c19defe2dc744e8e34d1328b430f3e03a"
+      },
+      "paginated-subscription": {
+        "git": "https://github.com/tmeasday/meteor-paginated-subscription.git",
+        "tag": "v0.1.2",
+        "commit": "35e0c6112df2b4cfeb60b559276a93cac5ee2dd6"
       },
       "page-js-ie-support": {
         "git": "https://github.com/tmeasday/meteor-page-js-ie-support.git",
