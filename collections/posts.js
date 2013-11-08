@@ -41,7 +41,7 @@ Meteor.methods({
 
 		var postId = Posts.insert(post);
 		return postId; 
-	}
+	},
 
 	upvote: function(postId) {
 		var user = Meteor.user();
