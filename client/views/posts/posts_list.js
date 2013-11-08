@@ -22,12 +22,12 @@ Template.postsList.helpers({
 	}, 
 
 	postsReady: function() {
-		return ! postsHandle.loading(); 
+		return ! this.handle.loading(); 
 	},
 
 	allPostsLoaded: function() {
-		return ! postsHandle.loading() 
-		&& Posts.find().count() < postsHandle.loaded(); 
+		return ! this.handle.loading() 
+		&& Posts.find().count() < this.handle.loaded(); 
 	}
 });
 
